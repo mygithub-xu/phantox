@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="../css/two.css" />
+		<script>
+		$(document).ready(function(){
+				$("#item_form").submit(function(){
+           		if(checkname()&&checkpass()){
+           			$.post("registServlet",$(this).serialize(),function(data){
+           			
+           			});
+           			return true
+           		}
+           		return false;
+           	})
+            $("#userName").blur(checkname);
+            $("#password").blur(checkpass);
+            $("#email").blur(checkEmail);
+			})
+		 function checkname () {
+    	var username=$("#userName").val();
+    	var reg_username=/^\w{4,8}$/;
+    	var flag=reg_username.test(username);
+    	if(flag){
+    		 $("#username_tishi").css("color","green")
+    		  $("#username_tishi").html("用户名合格")
+    		 
+    	}else{
+    		 $("#username_tishi").css("color","red")
+    		  $("#username_tishi").html("用户名必须在4到8个字符")
+    	}
+    	return flag;
+    }
+    function checkpass() {
+    	var userpass=$("#password").val();
+    	var reg_username=/^\w{4,8}$/;
+    	var flag=reg_username.test(userpass);
+    	if(flag){
+    		 $("#password_tishi").css("color","green")
+    		  $("#password_tishi").html("密码合格")
+    	}else{
+    		 $("#password_tishi").css("color","red")
+    		  $("#password_tishi").html("密码必须在4到8个字符")
+    	}
+    	return flag;
+    }
+			function checkEmail() {
+    	var email=$("#email").val();
+    	var reg_username=/^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
+    	var flag=reg_username.test(email);
+    	if(flag){
+    		 $("#email_tishi").css("color","green")
+    		  $("#email_tishi").html("邮箱格式正确")
+    	}else{
+    		 $("#email_tishi").css("color","red")
+    		  $("#email_tishi").html("邮箱格式不正确")
+    	}
+    	return flag;
+    }
+		</script>
+	</head>
+	<body>
+		<div id="zhuce">
+			<div class="zhuce_one">
+			<p id="item1_1">新用户注册</p>
+			<p id="item1_2">PHANTOX</p>
+			</div>
+			<div class="zhuce_two">
+				<form action="serset" method="post" id="item_form">
+					<div id="zhuce_two_item">
+					<div class="zhuce_name">
+						<div class="zhuce_name_item"><a>用户名</a></div>
+						<div class="zhuce_value_item"><input type="text" id="userName"/><span id="username_tishi">请输入用户名</span></div>
+					</div>				
+					<div class="zhuce_name">
+						<div class="zhuce_name_item"><a>密码</a></div>
+						<div class="zhuce_value_item"><input type="password" id="password"/><span id="password_tishi">请输入密码</span></div>
+					</div>
+					<div class="zhuce_name">
+						<div class="zhuce_name_item"><a>Email</a></div>
+						<div class="zhuce_value_item"><input type="text" id="email"/><span id="email_tishi">请输入Email</span></div>
+					</div>
+					<div class="zhuce_name">
+						<div class="zhuce_name_item"><a>姓名</a></div>
+						<div class="zhuce_value_item"><input type="text" id="name"/><span id="name_tishi">请输入姓名</span></div>
+					</div>
+					<div class="zhuce_name">
+						<div class="zhuce_name_item"><a>手机号</a></div>
+						<div class="zhuce_value_item"><input type="text" id="phone"/><span id="phone_tishi">请输入手机号</span></div>
+					</div>
+					<div class="zhuce_name">
+						<div class="zhuce_name_item"><a>性别</a></div>
+						<div class="zhuce_value_item" id="sex">
+							<input type="radio" value="男" name="sex">男
+                            <input type="radio" value="女" name="sex">女
+						</div>
+					</div>
+					<div class="zhuce_name">
+						<div class="zhuce_name_item"><a>出生日期</a></div>
+						<div class="zhuce_value_item"><input type="text" id="userName"/></div>
+					</div>
+					<div class="zhuce_name">
+						<div class="zhuce_name_item"><a>验证码</a></div>
+						<div class="zhuce_value_item"><input type="text" id="userName"/></div>
+					</div>
+					
+					<div class="zhuce_name">
+						<button type="submit">注册</button>
+                    <button type="reset">重置</button>
+					</div>
+					<!--<a>&nbsp;&nbsp;&nbsp;用户名</a><input type="text" id="userName"/><br /><br />
+					<a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码</a><input type="text" id="userName"/><br /><br />
+					<a>&nbsp;&nbsp;&nbsp;&nbsp;Email</a><input type="text" id="userName"/><br /><br />
+					<a>&nbsp;&nbsp;&nbsp;手机号</a><input type="text" id="userName"/><br /><br />
+					<a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别</a><input type="radio" value="男" name="sex">男&nbsp&nbsp
+                            <input type="radio" value="女" name="sex">女</td><br /><br />
+					<a>出生日期</a><input type="text" id="userName"/><br /><br />
+					<a>&nbsp;&nbsp;&nbsp;验证码</a><input type="text" id="userName"/><br /><br />
+					<button type="submit">注册</button>
+                    <button type="reset">重置</button>-->
+                    </div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

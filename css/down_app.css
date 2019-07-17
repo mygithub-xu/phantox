@@ -1,0 +1,83 @@
+ #down_two{
+        	margin-top: 64px;
+        	width: 100%;
+        	height: 1500px;
+        	background-color: black;
+        	font-size: 60px;
+        	color: white;
+        	padding-top: 100px;
+        }
+      #theme_image{
+        	width: 80%;
+        	height: 700px;
+        	margin: 0 auto;
+        	overflow: hidden;
+        }
+        #theme_image img{
+        	width: 90%;
+        	height: 600px;
+        	 position:relative;
+	        animation:mymove 3s infinite;
+	        -webkit-animation:mymove 3s infinite; /*Safari and Chrome*/
+	       animation-iteration-count:1;
+           -webkit-animation-iteration-count:1; /*Safari and Chrome*/
+        }
+         @keyframes mymove
+     {
+	     from {top: 500px;}
+	     to {top: 0px;}
+         }
+
+        @-webkit-keyframes mymove /*Safari and Chrome*/
+        {
+	from {top: 500px;}
+	to {top: 0px;}
+      }
+      #down_three{
+      	width: 60%;
+      	height: 500px;
+      	margin: 0 auto;
+      }
+      .qq_three_item{
+			width: 100%;
+			height: 250px;
+			
+		}
+		.qq_three_item h1{
+			font-style: italic;
+			color: darkorchid;
+			font-weight: 200;
+			font-size: 30px;
+			margin-top: 50px;
+			
+		}
+		.qq_three_item p{
+			font-style: italic;
+			color: darkorchid;
+			font-weight: 200;
+			font-size: 18px;
+			margin-top: 50px;
+			margin-left: 30%;
+		}
+		.qq_three_item  b{
+			color: white;
+			font-size: 30px;
+			display: flex;
+				margin-top: 50px;
+			margin-left: 30%;
+		}
+		.qq_three_item button{
+			 	 background-color: black;
+    border-radius: 8px;
+    border: 2px solid white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+    color: white;
+    margin-left: 30%;
+		}
+		.qq_three_item button:hover{
+			background-color: white;
+			color: black;
+		}

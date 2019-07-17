@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.11.0.js"></script>
+		 <link rel="stylesheet" href="../css/kuangjia.css" />
+		 <link rel="stylesheet" href="../css/bootstrap.css" />
+		 <script type="text/javascript" src="../js/bootstrap.js" ></script>
+		 <script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+	</head>
+	<style>
+		#case_view_one{
+			width: 100%; 
+			height:4500px;
+			 margin-top: 64px;
+			 background-color: black;
+			 padding-top: 100px;
+		}
+		#case_view_two{
+        	width: 70%;
+        	height: 600px;
+        	overflow: hidden;
+        	margin: 0 auto;
+        }
+      #case_view_two img{
+        	width: 100%;
+        	height: 500px;
+        	 position:relative;
+	        animation:mymove 3s infinite;
+	        -webkit-animation:mymove 3s infinite; /*Safari and Chrome*/
+	       animation-iteration-count:1;
+           -webkit-animation-iteration-count:1; /*Safari and Chrome*/
+        }
+         @keyframes mymove
+     {
+	     from {top: 500px;}
+	     to {top: 0px;}
+         }
+
+        @-webkit-keyframes mymove /*Safari and Chrome*/
+        {
+	from {top: 500px;}
+	to {top: 0px;}
+      }
+      #case_view_three{
+      	width: 70%;
+      	height: 3800px;
+      	background-color: white;
+      	margin: 0 auto;
+      }
+      #case_view_three_item1{
+      	width: 100%;
+      	height: 100px;
+      }
+      #case_view_three_item2{
+      	width: 100%;
+      	height: 500px;
+      }
+      ul.nav-tabs{
+        width: 140px;
+        margin-top: 200px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+    .col-xs-9 img{
+    	width: 65%;
+    	height: 350px;
+    	margin-bottom: 20px;
+    	transition: all 0.7s; 
+    }
+    .col-xs-9 a{
+    	font-size: 18px;
+    	color: red;
+    }
+    .col-xs-9 img:hover{
+    	transform: scale(1.5);
+    }
+	</style>
+	<body>
+		
+			<!--导航条部分-->
+ <div id="all_item2">
+		<nav class="hl_nav">
+		 <a href="" rel="home">
+  	 	<img src="../img/shangbiao.png"  style="height: 64px;width: 110px;margin-left: 60px;">
+  	 </a>
+    <ul class="nav_list">
+        <li class="highlight <!--active-->">
+            <a class="nav_head" href="Phantox.html">
+                <i class="icon fa fa-home"></i>
+                <span>网站首页</span>
+            </a>
+        </li>
+        <li class="highlight">
+            <a class="nav_head" href="about_us.html">
+                <i class="icon fa fa-cloud-download"></i>
+                <span>关于我们</span>
+            </a>
+            <a href="about_us.html" class="item">公司概况</a>
+            <a href="about_us.html" class="item">荣誉资质</a>
+            <a href="about_us.html" class="item">团队人员</a>
+        </li>
+        <li class="highlight">
+            <a class="nav_head" href="product_center.html">
+                <i class="icon fa fa-diamond"></i>
+                <span>产品中心</span>
+            </a>
+            <a href="product_center.html" class="item">PHANTOX</a> 
+            <a href="use_tutorials.html" class="item">使用教程</a> 
+        </li>
+        <li class="highlight">
+            <a class="nav_head" href="case_view.html">
+                <i class="icon fa fa-list-alt"></i>
+                <span>案例赏析</span>
+            </a>
+             <a href="quanxi_3d.html" class="item">3D全息宴会厅</a>
+            <a href="quanxi_3d.html" class="item">LED异形拼接</a>
+            <a href="quanxi_3d.html" class="item">裸眼3D</a>
+            <a href="quanxi_3d.html" class="item">室内应用</a>
+        </li>
+        <li class="highlight">
+            <a class="nav_head" href="news_informartion.html">
+                <i class="icon fa fa-comments"></i>
+                <span>新闻资讯</span>
+            </a>
+            <a href="news_informartion.html" class="item">资讯一</a>
+            <a href="news_informartion.html" class="item">资讯一</a>
+        </li>
+        <li>
+            <a class="nav_head" href="down_app.html">
+                <i class="icon fa fa-user"></i>
+                <span>下载中心</span>
+            </a>
+             <a href="down_app.html" class="item">手机app</a>
+            <a href="down_app.html" class="item">pc端</a>
+            
+        </li>
+        <li class="right highlight">
+            <a class="nav_head" href="content_us.html">
+                <i class="icon fa fa-cog "></i>
+                <span>联系我们</span>
+            </a>
+            <a href="chat_clud.html" class="item">加入官方qq群</a>
+            <a href="chat_clud.html" class="item">加入官方微信</a>
+            
+        </li>
+    </ul>
+    <div class="shade"></div>
+</nav>
+</div>
+<div id="case_view_one">
+		<div id="case_view_two">
+		<img src="../img/keji.jpg" />
+	</div>
+	<div id="case_view_three">
+		<div id="case_view_three_item1">
+			<ul class="breadcrumb">
+	<li><a href="Phantox.html">首页</a></li>
+	<li class="active">案例赏析</li>
+</ul>
+		</div>
+		<div id="case_view_three_item2">
+			<div class="container">
+   <div class="jumbotron">
+        <h1>案例赏析</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                <li class="active"><a href="#section-1">第一部分</a></li>
+                <li><a href="#section-2">第二部分</a></li>
+                <li><a href="#section-3">第三部分</a></li>
+                <li><a href="#section-4">第四部分</a></li>
+                <li><a href="#section-5">第五部分</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <h2 id="section-1">3D全息宴会厅</h2>
+            <a href="">点此查看更多信息</a><br />
+            <img src="../img/3D_one.jpg"/>
+            <img src="../img/3D_two.jpg"/><br />
+            <hr>
+            	
+            <h2 id="section-2">LED异形拼接</h2>
+            <a href="#">点此查看更多信息</a><br />
+            <img src="../img/LED_one.jpg"/>
+            <img src="../img/LED_two.jpg"/><br />
+            <hr>
+            	
+            <h2 id="section-3">裸眼3D</h2>
+            <a href="#">点此查看更多信息</a><br />
+            <img src="../img/luo3D_four.jpg"/>
+            <img src="../img/luo3D_one.jpg"/><br /><hr>
+            	
+            <h2 id="section-4">室内应用</h2>
+           <a href="#">点此查看更多信息</a><br />
+            <img src="../img/indoor_five.jpg"/>
+            <img src="../img/indoor_four.jpg"/><br /><hr>
+           <hr>
+            <h2 id="section-5">第五部分</h2>
+           <p style="font-size: 20px;">以上是我们PHANTOX的几个项目,点击更多链接可以看到更多信息</p>    
+        </div>
+    </div>
+</div>
+
+		</div>
+	</div>
+</div>
+<hr color="red" />
+<div id="footer">
+	<div id="foot_1">
+	<div class="foot_item">
+		<font>分类</font>
+		<ul>
+			<li><a href="about_us.html">关于我们</a></li>
+			<li><a href="product_center.html">产品中心</a></li>
+			<li><a href="news_informartion.html">新闻资讯</a></li>
+			<li><a href="case_view.html">案例展示</a></li>
+		</ul>
+	</div>
+	<div class="foot_item">
+		<font>页面</font>
+		<ul>
+			<li><a href="down_app.html">下载中心</a></li>
+			<li><a href="down_app.html">下载PHANTOX</a></li>
+			<li><a href="down_app.html">下载手机app</a></li>
+		</ul>
+	</div>
+	<div class="foot_item">
+		<font>关于</font>
+		<ul>
+			<li><a href="content_us.html">联系我们</a></li>
+			<li><a href="content_us.html">学习交流</a></li>
+			<li><a href="message_board.html">留言板</a></li>
+		</ul>
+	</div>
+	<div id="foot_2">
+		<font>服务热线</font>
+		<h2>123-4154-1545</h4>
+		<hr color="whitesmoke" />
+		<p>客服服务时段：周一至周五，9:00 - 18:00，节假日休息</p>
+	</div>
+</div>
+</div>
+	</body>
+</html>

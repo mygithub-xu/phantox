@@ -1,0 +1,79 @@
+*{
+	 padding:0;
+        margin:0;
+}	
+			#zhuce{
+				width: 80%;
+				height: 700px;
+				border: 1px solid red;
+				margin: 0px auto;
+				margin-top: 168px;
+				}
+			.zhuce_one{
+				width: 300px;
+				height: 700px;
+				float: left;
+			}
+			.zhuce_two{
+				width: 600px;
+				height: 700px;
+				float: left;
+			}
+			#zhuce_two_item{
+				width: 600px;
+				height: 450px;
+				margin-top: 50px;
+			}
+			.zhuce_name{
+				width: 600px;
+				height: 50px;
+			}
+			.zhuce_name .zhuce_name_item{
+				width: 100px;
+				height: 50px;
+				text-align: right;
+				float: left;
+				font-size: 20px;
+			}
+			.zhuce_name .zhuce_value_item{
+				width: 500px;
+				height: 50px;
+				float: left;
+			}
+			.zhuce_one #item1_1{
+				color: gray;
+				font-size: 25px;
+			}
+			.zhuce_one #item1_2{
+				color: green;
+				font-size: 30px;
+			}
+			.zhuce_one a{
+				font-size: 18px;
+				margin-left: 20px;
+				margin-right: 40px;
+			}
+			#item_form button{
+				height: 40px;
+				width: 100px;
+				margin-left: 40px;
+				margin-right: 40px;
+				border-radius: 5px;
+				border: 1px solid gray;
+				box-shadow: black 0px 0px 20px;
+			}
+			#item_form input{
+				border-radius: 5px;
+				height: 25px;
+				width: 200px;
+				margin-left: 40px;
+				border: 0.5px solid gray;
+			}
+			.zhuce_name span{
+				margin-left: 20px;
+			color: gray;
+			}
+			#sex input{
+				width: 20px;
+				height: 20px;
+			}

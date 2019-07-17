@@ -1,0 +1,59 @@
+#about_two{
+        	margin-top: 64px;
+        	width: 100%;
+        	height: 1000px;
+        	background-color: black;
+        	color: white;
+        	padding-top: 200px;
+        }
+        #about_three{
+        	height:700px;
+        	width: 70%;
+        	margin: 0 auto;
+        }
+        #about_three_item1{
+        	height: 100px;
+        	width: 100%;
+        }
+        #about_three_item1 a{
+        	color:white;
+        	font-size: 20px;
+        	text-decoration: none;
+        }
+        #about_three_item1 a:hover{
+        	color: red;
+        }
+        #about_three_item2{
+        	height:600px;
+        	width: 100%;
+        	text-align: center;
+        }
+        .qunliao{
+        	width: 100%;
+        	height: 299px;
+        }
+        .qunliao p{
+        	font-size: 18px;
+        	margin-top: 50px;
+        }
+        #about_three_item2 hr{
+        	width: 80%;
+        	color: wheat;
+        	margin: 0 auto;
+        	opacity: 0.2;
+        	margin-top: 50px;
+        }
+        .qunliao button{
+        	 background-color: black;
+    border-radius: 8px;
+    border: 2px solid white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+    color: white;
+        }
+        .qunliao button:hover{
+        	background-color: white;
+        	color: black;
+        }
